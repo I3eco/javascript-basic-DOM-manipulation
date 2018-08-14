@@ -3,6 +3,7 @@ window.onload = function() {
 		var answer,
 		    newHeader;
 		newHeader = document.createElement('h1');
+		document.body.appendChild(newHeader);
 		newHeader.setAttribute('id', 'main');
 		answer = document.getElementById('main');
 		
