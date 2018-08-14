@@ -5,6 +5,7 @@ window.onload = function() {
 		newHeader = document.createElement('h1');
 		newHeader.setAttribute('id', 'main');
 		answer = document.getElementById('main');
+		
 		function canDrive() {
 			var getAge = prompt("Please enter your age:");
 			if (getAge >= 18) {
@@ -16,6 +17,7 @@ window.onload = function() {
 				answer.setAttribute('class', 'red');
 			}
 		}
+		
 		canDrive();
 	})();
 }
