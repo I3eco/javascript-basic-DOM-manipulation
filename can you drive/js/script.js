@@ -1,7 +1,12 @@
 window.onload = function() {
 	(function(){
-		var answer = document.getElementById('main');
-		console.log(answer);
+		var answer,
+		    newHeader;
+		newHeader = document.createElement('h1');
+		document.body.appendChild(newHeader);
+		newHeader.setAttribute('id', 'main');
+		answer = document.getElementById('main');
+		
 		function canDrive() {
 			var getAge = prompt("Please enter your age:");
 			if (getAge >= 18) {
@@ -13,6 +18,7 @@ window.onload = function() {
 				answer.setAttribute('class', 'red');
 			}
 		}
+		
 		canDrive();
 	})();
 }
